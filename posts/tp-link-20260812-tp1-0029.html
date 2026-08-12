@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>라벨 프린터 인쇄 밀림과 잘림 현상 해결을 위한 단계별 점검법</title>
+  <style>
+ :root {
+ --bg-color: #ffffff;
+ --text-color: #0f172a;
+ --accent-color: #2563eb;
+ --muted-color: #64748b;
+ --border-color: #e2e8f0;
+ --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ font-family: var(--font-swiss);
+ line-height: 1.8;
+ letter-spacing: -0.01em;
+ padding: 0 24px;
+ }
+ .container {
+ max-width: 900px;
+ margin: 0 auto;
+ padding: 60px 0;
+ }
+ header {
+ border-bottom: 1px solid var(--border-color);
+ padding-bottom: 24px;
+ margin-bottom: 40px;
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+ }
+ .logo {
+ font-size: 1.25rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ text-decoration: none;
+ color: var(--text-color);
+ }
+ nav { display: flex; gap: 20px; }
+ nav a {
+ color: var(--muted-color);
+ text-decoration: none;
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ font-weight: 600;
+ transition: color 0.2s ease;
+ }
+ nav a:hover { color: var(--accent-color); }
+ main { padding-bottom: 60px; }
+ .meta-tag {
+ font-size: 0.75rem;
+ font-family: monospace;
+ text-transform: uppercase;
+ color: var(--accent-color);
+ font-weight: 700;
+ letter-spacing: 0.1em;
+ margin-bottom: 16px;
+ display: inline-block;
+ }
+ h1 {
+ font-size: 2.3rem;
+ font-weight: 700;
+ line-height: 1.3;
+ letter-spacing: -0.02em;
+ color: var(--text-color);
+ margin-bottom: 32px;
+ }
+ .content {
+ font-size: 1.05rem;
+ color: var(--text-color);
+ margin-bottom: 48px;
+ font-weight: 400;
+ }
+ .content p { margin-bottom: 20px; }
+ .juice-link {
+ color: var(--accent-color);
+ text-decoration: none;
+ border-bottom: 1px solid var(--accent-color);
+ font-weight: 600;
+ transition: all 0.2s ease;
+ }
+ .juice-link:hover {
+ background-color: rgba(37, 99, 235, 0.05);
+ }
+ .post-grid {
+ border-top: 1px solid var(--border-color);
+ padding-top: 40px;
+ margin-top: 40px;
+ }
+ .grid-title {
+ font-size: 0.85rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: var(--muted-color);
+ margin-bottom: 24px;
+ }
+ .posts-list {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+ }
+ .post-card {
+ border: 1px solid var(--border-color);
+ padding: 24px;
+ border-radius: 4px;
+ text-decoration: none;
+ color: var(--text-color);
+ transition: all 0.2s ease;
+ }
+ .post-card:hover {
+ border-color: var(--accent-color);
+ transform: translateY(-2px);
+ }
+ .post-card h3 {
+ font-size: 1.15rem;
+ font-weight: 600;
+ margin-bottom: 8px;
+ }
+ .post-card p {
+ font-size: 0.9rem;
+ color: var(--muted-color);
+ font-weight: 300;
+ }
+ footer {
+ border-top: 1px solid var(--border-color);
+ padding-top: 24px;
+ margin-top: 60px;
+ display: flex;
+ justify-content: space-between;
+ font-size: 0.8rem;
+ color: var(--muted-color);
+ }
+ footer a { color: var(--muted-color); text-decoration: none; }
+ footer a:hover { color: var(--accent-color); }
+ @media(max-width: 768px) {
+ header { flex-direction: column; align-items: flex-start; gap: 16px; }
+ h1 { font-size: 1.8rem; }
+ }
+ </style>
+  <link rel="canonical" href="https://jamsil-pub-guide.pbn-builder.xyz/posts/tp-link-20260812-tp1-0029.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:url" content="https://jamsil-pub-guide.pbn-builder.xyz/posts/tp-link-20260812-tp1-0029.html">
+  <meta property="og:title" content="라벨 프린터 인쇄 밀림과 잘림 현상 해결을 위한 단계별 점검법">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <a href="/" class="logo">KR.GEEK</a>
+ <nav><a href="../index.html">HOME</a> | <a href="../sitemap.xml">SITEMAP</a></nav>
+ </header>
+    <main>
+<article>
+<h1>라벨 프린터 인쇄 밀림과 잘림 현상 해결을 위한 단계별 점검법</h1>
+
+<p>라벨 출력이 정해진 영역을 벗어나 밀리거나 중간에 잘려 나오는 현상은 대부분 프린터 센서가 라벨 사이의 간격을 인식하지 못해 발생한다. 감열식이나 열전사 프린터는 라벨지 뒷면의 블랙 마크나 빈 공간을 센서로 감지하여 한 장의 시작과 끝을 구분한다. 센서 표면에 먼지가 쌓이거나 이물질이 묻으면 광량이 차단되어 경계선을 지나치기 쉬우므로, 먼저 프린터 덮개를 열고 센서 위치를 찾아 에탄올을 묻힌 면봉으로 가볍게 닦아낸다.</p>
+
+<p>물리적인 청소 후에도 증상이 지속된다면 PC의 프린터 드라이버 설정에서 용지 규격이 실제 라벨의 가로 및 세로 길이와 일치하는지 점검한다. 기본 인쇄 설정의 용지 크기가 실제 규격보다 단 1mm만 다르게 지정되어도 수십 장을 출력하는 과정에서 오차가 누적되어 인쇄 영역이 완전히 어긋난다. 출력 프로그램의 템플릿 크기와 운영체제 장치 설정의 용지 크기가 서로 충돌하지 않도록 동일한 수치로 통일해야 오작동을 막는다.</p>
+
+<p>라벨지가 공급되는 통로의 물리적 유격도 인쇄 위치에 직접적인 영향을 준다. 롤을 지지하는 내부 가이드가 느슨하면 용지가 흔들려 사선으로 급지되고, 반대로 너무 조이면 마찰력 때문에 용지가 제때 밀려 나오지 못해 세로 인쇄가 밀린다. 급지 고무 롤러의 마모나 점착제 오염으로 인한 미끄러짐 역시 공급 속도를 떨어뜨리는 주 원인이므로 롤러 표면의 미끄러운 성분을 닦아내고 점검해야 한다.</p>
+
+<p>기기 스펙에 맞는 소모품을 선택하는 일도 필수적이다. 특정 프린터는 센서 광량이 고정되어 있어 후지가 너무 두껍거나 재질이 다르면 인쇄 경계를 감지하지 못해 지속적인 급지 오류를 일으킨다. 불필요한 시행착오를 줄이기 위해 <a class="anchor-link" href="https://shop.roundlog.site/" data-bpaas-link-target="t2-shop-roundlog">라벨지 호환 정리</a> 정보를 참고하여 현재 사용 중인 장비의 감지 방식과 용지 사양이 정확하게 일치하는지 비교하는 작업이 요구된다.</p>
+  </article>
+        <nav class="post-pager" aria-label="글 이동">
+      <a class="post-pager__prev" href="../posts/review-001-m50lmj.html">← 잠실 펍 가이드 솔직 후기</a>
+      <a class="post-pager__index" href="../posts.html">글 목록</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
